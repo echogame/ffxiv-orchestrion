@@ -969,11 +969,25 @@
     },
 
     {
-      "id": 0,
+      "id": 900,
       "title": "Pa-Paya",
       "url": "https://youtu.be/t8dTnavUMnk",
       "source": {
         "comment": "Seasonal event - Hatchingtide 2016"
+      },
+      {
+      "id": 901,
+      "title": "Moonfire Faire",
+      "url": "https://www.youtube.com/watch?v=uVnacSEeV0U",
+      "source": {
+        "comment": "Seasonal event - Moonfire Faire 2016"
+      },
+      {
+      "id": 902,
+      "title": "Heavensward",
+      "url": "https://www.youtube.com/watch?v=a_xL0EIA6mg",
+      "source": {
+        "comment": "Seasonal event - The Rising 2016"
       }
     }
   ]
