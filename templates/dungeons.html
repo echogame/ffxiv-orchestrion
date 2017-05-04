@@ -1,4 +1,4 @@
-<h1>All</h1>
+<h1>Dungeons</h1>
 <div>
   <table class="table table-hover">
     <thead>
@@ -10,7 +10,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="song in data" ng-class="{'success': song.checked}">
+      <tr ng-repeat="song in data | filter:category='Dungeons'" ng-class="{'success': song.checked}">
         <td>
           <input
             type="checkbox"
