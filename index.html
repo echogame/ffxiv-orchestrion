@@ -15,12 +15,77 @@
     <script src="app.js"></script>
     <script src="appRoutes.js"></script>
 
+    <style type="text/css">
+      .nav {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        text-align: center;
+      }
+
+      .nav > li {
+        position: relative;
+        display: inline-block;
+      }
+    </style>
+
     <title>FFXIV Orchestrion Tracker</title>
   </head>
 
   <body>
-    <div ui-view>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav">
+          <li><a ui-sref="app"><img src="icons/all.png"/>All</a></li>
+          <li><a ui-sref="locales"><img src="icons/locales.png"/>Locales</a></li>
+          <li><a ui-sref="dungeons"><img src="icons/dungeons.png"/>Dungeons</a></li>
+          <li><a ui-sref="primal_battles"><img src="icons/primal_battles.png"/>Primal Battles</a></li>
+          <li><a ui-sref="raids"><img src="icons/raids.png"/>Raids</a></li>
+          <li><a ui-sref="others"><img src="icons/others.png"/>Others</a></li>
+          <li><a ui-sref="seasonal"><img src="icons/seasonal.png"/>Seasonal</a></li>
+        </ul>
+      </div>
     </div>
+
+    <div class="row">
+    <div class="span12">
+      <div class="container">
+        <div class="page-header">
+          <h1>FFXIV Orchestrion Tracker <small>v0.1.2</small></h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">Drop Tips</div>
+              <div class="panel-body">
+                <ul>
+                  <li>2.x raids and primals have guaranteed drops from chest if you do them with "min iLevel" setting checked.</li>
+                  <li>Dungeon drops go directly to player inventory when you beat the last boss.</li>
+                </ul>
+              </div>
+            </div>
+
+            <ul class="list-unstyled">
+                <li>Thanks to /u/Shini-tan for <a href="https://www.reddit.com/r/ffxiv/comments/47gi5f/list_of_orchestrion_roll_sources/">compiling the info</a>.</li>
+                <li>Thanks to ScarletBlues for 3.3 roll data updates.</li>
+                <li>Please feel free to <a href="https://github.com/echogame/ffxiv-orchestrion">open a pull request or issue</a> for feature requests or to file a bug.</li>
+                <li>You can find me on <a href="http://na.finalfantasyxiv.com/lodestone/character/753498">Hyperion @ Chai Latte</a></li>
+                <li>Thanks to /u/LightSamus for <a href="https://www.reddit.com/r/ffxiv/comments/5oahws/complete_orchestrion_songs_guide_titles_origins/">compiling data updating this list to 3.5</a></li>
+				<li>Categories added by <a href="https://github.com/gcardonag">GCardonaG</a> (Malboro @ Don Cervantes) </li>
+            </ul>
+          </div>
+        </div>
+        <div class="well" ui-view></div>
+
+        <div class="row">      
+          <div class="col-md-12 footer">
+            <em>FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   </body>
 
 </html>
